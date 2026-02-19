@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Homepage - Publications</title>
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, serif;
+            margin: 0; padding: 0;
+            background: #ffffff; color: #333333;
+            line-height: 1.6;
+        }
+        .container { max-width: 960px; margin: 0 auto; padding: 20px 30px; }
+
+        .header-table { width: 100%; border-collapse: collapse; margin-bottom: 10px; }
+        .header-table td { vertical-align: top; padding: 10px; }
+        .header-info { width: 45%; }
+        .header-info h2 { margin: 0 0 5px 0; font-size: 1.3em; color: #003366; }
+        .header-info p { margin: 2px 0; font-size: 0.9em; }
+        .header-info a { color: #0066cc; text-decoration: none; }
+        .header-info a:hover { text-decoration: underline; }
+        .header-photo { width: 25%; text-align: center; }
+        .header-photo img { max-width: 160px; border: 1px solid #ccc; }
+        .header-campus { width: 30%; text-align: center; }
+        .header-campus img { max-width: 200px; border: 1px solid #ccc; }
+
+        hr { border: none; border-top: 1px solid #999; margin: 15px 0; }
+
+        .navbar { text-align: center; padding: 8px 0; }
+        .navbar a { color: #0066cc; text-decoration: none; font-size: 1em; font-weight: bold; margin: 0 5px; }
+        .navbar a:hover { text-decoration: underline; color: #003399; }
+
+        h3 { font-size: 1.2em; color: #003366; margin-top: 20px; margin-bottom: 10px; }
+        h4 { font-size: 1.05em; color: #333; margin-top: 15px; margin-bottom: 8px; }
+
+        .pub-list { padding-left: 25px; }
+        .pub-list li {
+            margin-bottom: 10px; font-size: 0.92em; text-align: justify;
+        }
+
+        .footer-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .footer-table td { padding: 10px; text-align: center; }
+        .footer-table img { max-height: 50px; }
+
+        @media (max-width: 768px) {
+            .header-table td { display: block; width: 100% !important; text-align: center; }
+            .header-info { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== 顶部信息区（与主页一致） ===== -->
+    <table class="header-table">
+        <tr>
+            <td class="header-info">
+                <h2>你的姓名 (English Name)</h2>
+                <p>职称, 学位, 学会会员资格</p>
+                <p><a href="#">所属院系</a></p>
+                <p><a href="#">所属学院</a></p>
+                <p><a href="#">大学名称</a></p>
+                <p>地址：你的办公地址</p>
+                <br>
+                <p>Email: your.email@university.edu</p>
+                <p>Tel: (xxx) xxx-xxxx</p>
+                <p>Office: 办公室号</p>
+            </td>
+            <td class="header-photo">
+                <img src="photo.jpg" alt="个人照片">
+            </td>
+            <td class="header-campus">
+                <img src="campus.jpg" alt="学校照片">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- ===== 导航栏 ===== -->
+    <div class="navbar">
+        <h3>
+            [<a href="index.html">Home</a>]&nbsp;&nbsp;
+            [<a href="Research.html">Research</a>]&nbsp;&nbsp;
+            [<a href="Teaching.html">Teaching</a>]&nbsp;&nbsp;
+            [<a href="Publication.html">Publication</a>]&nbsp;&nbsp;
+            [<a href="Supervision.html">Supervision</a>]&nbsp;&nbsp;
+            [<a href="Professional_Activities.html">Professional Activities</a>]&nbsp;&nbsp;
+            [<a href="Open_Position.html">Open Position</a>]
+        </h3>
+    </div>
+
+    <hr>
+
+    <!-- ===== 出版物 ===== -->
+    <h3>Publications</h3>
+
+    <!-- 著作 -->
+    <h4><strong>Books</strong></h4>
+    <ol class="pub-list">
+        <li><strong>你的名字</strong> and 合著者, "<a href="#">书名</a>", <em>出版社</em>, 年份 (ISBN xxx).</li>
+    </ol>
+
+    <!-- 书章 -->
+    <h4><strong>Book Chapters</strong></h4>
+    <ol class="pub-list">
+        <li><strong>你的名字</strong> and 合著者, "<a href="#">章节标题</a>", <em>书名</em>, <em>出版社</em>, 年份.</li>
+    </ol>
+
+    <hr>
+
+    <!-- 期刊论文 -->
+    <h4>Journal Papers</h4>
+
+    <h4>2025</h4>
+    <ol class="pub-list">
+        <li>作者1, <strong>你的名字</strong>, and 作者3, "<a href="#">论文标题</a>", <em>期刊名称</em>, vol. XX, no. XX, pp. XXX-XXX, 2025.</li>
+        <li>作者1, <strong>你的名字</strong>, and 作者3, "<a href="#">论文标题</a>", <em>期刊名称</em>, to appear.</li>
+    </ol>
+
+    <h4>2024</h4>
+    <ol class="pub-list">
+        <li>作者1, <strong>你的名字</strong>, and 作者3, "<a href="#">论文标题</a>", <em>期刊名称</em>, vol. XX, no. XX, pp. XXX-XXX, 2024.</li>
+    </ol>
+
+    <hr>
+
+    <!-- 会议论文 -->
+    <h4>Conference/Workshop Papers and Posters</h4>
+
+    <h4>2025</h4>
+    <ol class="pub-list">
+        <li>作者1, <strong>你的名字</strong>, and 作者3, "<a href="#">论文标题</a>", in Proc. of <em>会议名称</em>, 城市, 国家, 日期, 年份.</li>
+    </ol>
+
+    <h4>2024</h4>
+    <ol class="pub-list">
+        <li>作者1, <strong>你的名字</strong>, and 作者3, "<a href="#">论文标题</a>", in Proc. of <em>会议名称</em>, 城市, 国家, 日期, 年份.</li>
+    </ol>
+
+    <hr>
+
+    <!-- 页脚 -->
+    <table class="footer-table">
+        <tr>
+            <td><img src="university_logo.png" alt="University Logo"></td>
+            <td><img src="university_logo_v.png" alt="University Logo Vertical"></td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>

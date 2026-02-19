@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name's Homepage</title>
+    <style>
+        /* ===== 基础样式 ===== */
+        body {
+            font-family: "Times New Roman", Georgia, serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        /* ===== 主容器 ===== */
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px 30px;
+        }
+
+        /* ===== 顶部信息区（表格式布局） ===== */
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        .header-table td {
+            vertical-align: top;
+            padding: 10px;
+        }
+
+        .header-info {
+            width: 45%;
+        }
+
+        .header-info h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.3em;
+            color: #003366;
+        }
+
+        .header-info p {
+            margin: 2px 0;
+            font-size: 0.9em;
+        }
+
+        .header-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .header-info a:hover {
+            text-decoration: underline;
+        }
+
+        .header-photo {
+            width: 25%;
+            text-align: center;
+        }
+
+        .header-photo img {
+            max-width: 160px;
+            border: 1px solid #ccc;
+        }
+
+        .header-campus {
+            width: 30%;
+            text-align: center;
+        }
+
+        .header-campus img {
+            max-width: 200px;
+            border: 1px solid #ccc;
+        }
+
+        /* ===== 分隔线 ===== */
+        hr {
+            border: none;
+            border-top: 1px solid #999;
+            margin: 15px 0;
+        }
+
+        /* ===== 导航栏 ===== */
+        .navbar {
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .navbar a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+            color: #003399;
+        }
+
+        .navbar span {
+            color: #333;
+        }
+
+        /* ===== 内容区标题 ===== */
+        h3 {
+            font-size: 1.2em;
+            color: #003366;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            font-size: 1.05em;
+            color: #333;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        /* ===== 新闻/动态列表 ===== */
+        .news-list {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        .news-list li {
+            margin-bottom: 8px;
+            font-size: 0.92em;
+        }
+
+        .news-list li strong {
+            color: #333;
+        }
+
+        /* ===== 出版物列表（有序） ===== */
+        .pub-list {
+            padding-left: 25px;
+        }
+
+        .pub-list li {
+            margin-bottom: 10px;
+            font-size: 0.92em;
+            text-align: justify;
+        }
+
+        .pub-list li em {
+            font-style: italic;
+        }
+
+        /* ===== 工作经历 / 教育经历 ===== */
+        .exp-list {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        .exp-list li {
+            margin-bottom: 5px;
+            font-size: 0.92em;
+        }
+
+        /* ===== 简介段落 ===== */
+        .biography {
+            font-size: 0.92em;
+            text-align: justify;
+        }
+
+        /* ===== 页脚 ===== */
+        .footer-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .footer-table td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-table img {
+            max-height: 50px;
+        }
+
+        /* ===== 响应式适配 ===== */
+        @media (max-width: 768px) {
+            .header-table td {
+                display: block;
+                width: 100% !important;
+                text-align: center;
+            }
+            .header-info {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ===== 顶部信息区 ===== -->
+    <table class="header-table">
+        <tr>
+            <td class="header-info">
+                <h2>你的姓名 (English Name)</h2>
+                <p>职称, 学位, 学会会员资格</p>
+                <p><a href="#">所属院系</a></p>
+                <p><a href="#">所属学院</a></p>
+                <p><a href="#">大学名称</a></p>
+                <p>地址：你的办公地址</p>
+                <br>
+                <p>Email: your.email@university.edu</p>
+                <p>Tel: (xxx) xxx-xxxx</p>
+                <p>Office: 办公室号</p>
+            </td>
+            <td class="header-photo">
+                <!-- 替换为你的个人照片 -->
+                <img src="photo.jpg" alt="个人照片">
+            </td>
+            <td class="header-campus">
+                <!-- 替换为学校/实验室照片 -->
+                <img src="campus.jpg" alt="学校照片">
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- ===== 导航栏 ===== -->
+    <div class="navbar">
+        <h3>
+            [<a href="index.html">Home</a>]&nbsp;&nbsp;
+            [<a href="Research.html">Research</a>]&nbsp;&nbsp;
+            [<a href="Teaching.html">Teaching</a>]&nbsp;&nbsp;
+            [<a href="Publication.html">Publication</a>]&nbsp;&nbsp;
+            [<a href="Supervision.html">Supervision</a>]&nbsp;&nbsp;
+            [<a href="Professional_Activities.html">Professional Activities</a>]&nbsp;&nbsp;
+            [<a href="Open_Position.html">Open Position</a>]
+        </h3>
+    </div>
+
+    <hr>
+
+    <!-- ===== 新闻动态 ===== -->
+    <h3>News</h3>
+    <ul class="news-list">
+        <li><strong>Congratulations!</strong> 这里写你的最新消息或成就...</li>
+        <li>日期 - 你的论文 "论文标题" 被 <strong><em>期刊名称</em></strong> 接收。</li>
+        <li>日期 - 你获得了某个奖项或荣誉...</li>
+        <li>日期 - 其他新闻动态...</li>
+    </ul>
+
+    <hr>
+
+    <!-- ===== 工作经历 ===== -->
+    <h3>Work Experience</h3>
+    <ul class="exp-list">
+        <li>职称, 单位名称, 地点 (起始年 - 至今).</li>
+        <li>职称, 单位名称, 地点 (起始年 - 结束年).</li>
+    </ul>
+
+    <hr>
+
+    <!-- ===== 教育经历 ===== -->
+    <h3>Education</h3>
+    <ul class="exp-list">
+        <li>博士, 大学名称, 地点 (起始年 - 结束年).</li>
+        <li>硕士, 大学名称, 地点 (起始年 - 结束年).</li>
+        <li>学士, 大学名称, 地点 (起始年 - 结束年).</li>
+    </ul>
+
+    <hr>
+
+    <!-- ===== 个人简介 ===== -->
+    <h3>Brief Biography</h3>
+    <p class="biography">
+        在这里写你的个人简介。包括你的教育背景、研究经历、主要研究方向、发表论文情况、担任的学术职务等。
+        这一段通常是第三人称叙述，如："XXX received the PhD degree in ... from ... University in 20XX. 
+        Since 20XX, he/she has been a ... with the Department of ..., University of ..."
+    </p>
+
+    <hr>
+
+    <!-- ===== 奖项与荣誉 ===== -->
+    <h3>Awards / Recognitions</h3>
+    <ul class="exp-list">
+        <li>奖项名称, 颁发机构, 年份.</li>
+        <li>奖项名称, 颁发机构, 年份.</li>
+    </ul>
+
+    <hr>
+
+    <!-- ===== 页脚（可放学校Logo） ===== -->
+    <table class="footer-table">
+        <tr>
+            <td>
+                <!-- 替换为你学校的Logo -->
+                <img src="university_logo.png" alt="University Logo">
+            </td>
+            <td>
+                <img src="university_logo_v.png" alt="University Logo Vertical">
+            </td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
