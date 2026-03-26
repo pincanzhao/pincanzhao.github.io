@@ -3,16 +3,16 @@ body {
   font-family: "Times New Roman", serif;
   font-size: 12pt;
   margin: 0;
-  padding: 8px;
+  padding: 12px 16px;
   color: black;
   background: white;
-  line-height: normal;
+  line-height: 1.5;
 }
 
 h3 {
-  font-size: 13.5pt;
+  font-size: 14pt;
   font-family: "Times New Roman", serif;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 8px;
 }
 
@@ -20,7 +20,7 @@ h4 {
   font-size: 12pt;
   font-family: "Times New Roman", serif;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-bottom: 6px;
 }
 
@@ -36,7 +36,7 @@ a:visited { color: #954F72; text-decoration: underline; }
 hr {
   border: none;
   border-top: 1.5pt solid #595959;
-  margin: 10px 0;
+  margin: 12px 0;
 }
 
 ul {
@@ -48,7 +48,7 @@ ul {
 ul li {
   font-size: 12pt;
   font-family: "Times New Roman", serif;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 ol {
@@ -72,12 +72,17 @@ ol li {
 
 .header-table td {
   border: none;
-  padding: 4px 7px;
+  padding: 6px 10px;
   vertical-align: top;
 }
 
 .header-info {
   width: 60%;
+}
+
+.header-info p {
+  font-size: 13pt;
+  line-height: 1.6;
 }
 
 .header-photo {
@@ -87,27 +92,27 @@ ol li {
 }
 
 .header-photo img {
-  width: 300px;
-  height: 270px;
+  width: 250px;
+  height: 225px;
   object-fit: cover;
   border-radius: 4px;
 }
 
 .header-name {
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: bold;
 }
 
 /* ========== Social Links ========== */
 .social-links {
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .social-links a {
   text-decoration: none;
   color: #333;
-  margin-right: 12px;
-  font-size: 14pt;
+  margin-right: 14px;
+  font-size: 16pt;
   transition: color 0.2s;
 }
 
@@ -148,7 +153,7 @@ table.MsoTableGrid td {
   border-collapse: collapse;
   border: none;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 .footer td {
@@ -158,20 +163,20 @@ table.MsoTableGrid td {
 }
 
 .footer img {
-  height: 40px;
+  height: 70px;
 }
 
 .last-updated {
   text-align: center;
   font-size: 10pt;
   color: gray;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 /* ========== Responsive ========== */
 @media screen and (max-width: 768px) {
   body {
-    padding: 6px;
+    padding: 8px;
     font-size: 11pt;
   }
 
@@ -197,12 +202,16 @@ table.MsoTableGrid td {
   }
 
   .header-photo img {
-    width: 200px;
-    height: 180px;
+    width: 180px;
+    height: 162px;
   }
 
   .header-info {
     text-align: center;
+  }
+
+  .header-info p {
+    font-size: 12pt;
   }
 
   .nav-center h3 {
@@ -219,20 +228,24 @@ table.MsoTableGrid td {
     padding: 4px;
   }
 
+  .footer img {
+    height: 50px;
+  }
+
   .social-links a {
-    font-size: 16pt;
-    margin-right: 16px;
+    font-size: 18pt;
+    margin-right: 18px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .header-name {
-    font-size: 14pt;
+    font-size: 16pt;
   }
 
   .header-photo img {
-    width: 160px;
-    height: 144px;
+    width: 150px;
+    height: 135px;
   }
 
   .nav-center h3 {
