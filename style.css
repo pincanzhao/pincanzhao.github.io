@@ -355,7 +355,7 @@ table.MsoTableGrid td {
 
 .interest-cols {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 14px;
   margin: 10px 0 4px;
 }
@@ -371,6 +371,14 @@ table.MsoTableGrid td {
 .interest-cols ul {
   margin: 4px 0;
   padding-left: 18pt;
+}
+
+@media screen and (max-width: 760px) {
+  .interest-cols { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media screen and (max-width: 430px) {
+  .interest-cols { grid-template-columns: 1fr; }
 }
 
 /* ========== Responsive ========== */
