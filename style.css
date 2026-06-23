@@ -353,6 +353,26 @@ table.MsoTableGrid td {
   margin: 10px 0 4px;
 }
 
+.interest-cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin: 10px 0 4px;
+}
+
+.interest-cols h4 {
+  color: #294a8b;
+  font-size: 12pt;
+  margin: 4px 0 4px;
+  border-bottom: 1px solid #eef2fb;
+  padding-bottom: 3px;
+}
+
+.interest-cols ul {
+  margin: 4px 0;
+  padding-left: 18pt;
+}
+
 /* ========== Responsive ========== */
 @media screen and (max-width: 768px) {
   body {
