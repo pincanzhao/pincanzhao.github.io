@@ -1,187 +1,254 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" font-family="Helvetica, Arial, sans-serif">
-  <title>From today's roads to a fully autonomous future: shared perception, learning and decision, and trust and privacy working together for safe mobility</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 560" font-family="Helvetica, Arial, sans-serif">
+  <title>Interdisciplinary research overview: cooperative perception, learning and decision, and trust and privacy form a closed loop from raw sensing to trusted safe actions, built on civil engineering, electrical and computer engineering, computer science, and the social sciences</title>
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#d9e9f9"/>
-      <stop offset="0.42" stop-color="#a9c6ea"/>
-      <stop offset="0.72" stop-color="#53659c"/>
-      <stop offset="1" stop-color="#1c2750"/>
-    </linearGradient>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#cfdff0"/>
-      <stop offset="0.5" stop-color="#8fa3c9"/>
-      <stop offset="1" stop-color="#1a2344"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6f9fd"/>
+      <stop offset="1" stop-color="#dfe9f6"/>
     </linearGradient>
     <linearGradient id="roadg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#60718d"/>
-      <stop offset="1" stop-color="#242e4e"/>
+      <stop offset="0" stop-color="#5d6e8a"/>
+      <stop offset="1" stop-color="#3a4668"/>
     </linearGradient>
-    <linearGradient id="ribbon" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#5fb5e8"/>
-      <stop offset="0.5" stop-color="#2ec4b6"/>
-      <stop offset="1" stop-color="#8fa6f5"/>
-    </linearGradient>
-    <radialGradient id="duskGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#f6b76b" stop-opacity="0.65"/>
-      <stop offset="1" stop-color="#f6b76b" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#fff7e0" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#fff7e0" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="frame"><rect width="1500" height="500"/></clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40,0 H0 V40" fill="none" stroke="#c7d6ea" stroke-width="1" opacity="0.35"/>
+    </pattern>
+    <marker id="ar" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#294a8b"/>
+    </marker>
+    <marker id="art" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#2ec4b6"/>
+    </marker>
+    <clipPath id="frame"><rect width="1500" height="560"/></clipPath>
   </defs>
 
   <g clip-path="url(#frame)">
-  <rect width="1500" height="500" fill="url(#sky)"/>
-  <circle cx="1225" cy="400" r="300" fill="url(#duskGlow)"/>
-  <circle cx="185" cy="105" r="70" fill="url(#sunGlow)"/>
-  <circle cx="185" cy="105" r="30" fill="#fffdf4" opacity="0.95"/>
-  <g fill="#ffffff">
-    <circle cx="1120" cy="80" r="2"/><circle cx="1210" cy="55" r="1.6"/><circle cx="1300" cy="95" r="2"/>
-    <circle cx="1385" cy="60" r="1.6"/><circle cx="1445" cy="120" r="2"/><circle cx="1255" cy="140" r="1.4"/>
-  </g>
+  <rect width="1500" height="560" fill="url(#bg)"/>
+  <rect width="1500" height="560" fill="url(#grid)"/>
 
-  <path d="M0,392 C240,362 480,398 760,378 C1020,360 1260,386 1500,366 L1500,500 L0,500 Z" fill="#8fa7cf" opacity="0.30"/>
-  <rect y="430" width="1500" height="70" fill="url(#ground)"/>
+  <text x="750" y="30" text-anchor="middle" font-size="15" font-weight="bold" letter-spacing="3" fill="#44557e">AN INTERDISCIPLINARY RESEARCH PROGRAM FOR SAFE, TRUSTWORTHY MOBILITY</text>
 
-  <g>
-    <rect x="18"  y="300" width="52" height="130" fill="#b7c8e6"/>
-    <rect x="78"  y="258" width="64" height="172" fill="#a5b9dc"/>
-    <rect x="150" y="318" width="44" height="112" fill="#bcccE8"/>
-    <rect x="202" y="282" width="58" height="148" fill="#aabeDF"/>
-    <rect x="268" y="330" width="40" height="100" fill="#b7c8e6"/>
-    <rect x="316" y="296" width="52" height="134" fill="#a5b9dc"/>
-    <rect x="376" y="340" width="36" height="90"  fill="#bcccE8"/>
+  <line x1="120" y1="67" x2="1400" y2="67" stroke="#9fb4d8" stroke-width="1.2" stroke-dasharray="6 6"/>
+  <g font-size="15" font-weight="bold" letter-spacing="1.6" text-anchor="middle">
+    <rect x="165" y="50" width="210" height="34" rx="17" fill="#ffffff" stroke="#294a8b" stroke-width="1.4"/>
+    <text x="270" y="72" fill="#294a8b">CIVIL ENGINEERING</text>
+    <rect x="490" y="50" width="310" height="34" rx="17" fill="#ffffff" stroke="#294a8b" stroke-width="1.4"/>
+    <text x="645" y="72" fill="#294a8b">ELECTRICAL &amp; COMPUTER ENG.</text>
+    <rect x="875" y="50" width="230" height="34" rx="17" fill="#ffffff" stroke="#294a8b" stroke-width="1.4"/>
+    <text x="990" y="72" fill="#294a8b">COMPUTER SCIENCE</text>
+    <rect x="1190" y="50" width="200" height="34" rx="17" fill="#ffffff" stroke="#294a8b" stroke-width="1.4"/>
+    <text x="1290" y="72" fill="#294a8b">SOCIAL SCIENCES</text>
   </g>
-
-  <g>
-    <rect x="1000" y="238" width="54" height="192" fill="#273562"/>
-    <rect x="1062" y="196" width="66" height="234" fill="#1f2c55"/>
-    <rect x="1136" y="252" width="48" height="178" fill="#2b3a69"/>
-    <rect x="1192" y="172" width="70" height="258" fill="#243260"/>
-    <rect x="1270" y="226" width="56" height="204" fill="#1f2c55"/>
-    <rect x="1334" y="188" width="64" height="242" fill="#2b3a69"/>
-    <rect x="1406" y="248" width="50" height="182" fill="#243260"/>
-    <rect x="1462" y="292" width="38" height="138" fill="#1f2c55"/>
-    <g fill="#f2b35c" opacity="0.9">
-      <rect x="1076" y="216" width="7" height="5"/><rect x="1096" y="248" width="7" height="5"/><rect x="1108" y="288" width="7" height="5"/>
-      <rect x="1206" y="196" width="7" height="5"/><rect x="1228" y="236" width="7" height="5"/><rect x="1240" y="300" width="7" height="5"/>
-      <rect x="1348" y="212" width="7" height="5"/><rect x="1368" y="262" width="7" height="5"/><rect x="1282" y="252" width="7" height="5"/>
-      <rect x="1420" y="276" width="7" height="5"/><rect x="1014" y="266" width="7" height="5"/><rect x="1352" y="330" width="7" height="5"/>
-    </g>
-  </g>
-
-  <rect y="448" width="1500" height="38" fill="url(#roadg)"/>
-  <line x1="12" y1="467" x2="1492" y2="467" stroke="#f3eedd" stroke-width="3" stroke-dasharray="24 20" opacity="0.8"/>
-
-  <g stroke="#44557e" stroke-width="4">
-    <line x1="622" y1="448" x2="622" y2="352"/>
-    <line x1="866" y1="448" x2="866" y2="342"/>
-  </g>
-  <rect x="610" y="340" width="24" height="13" rx="2.5" fill="#294a8b"/>
-  <rect x="854" y="330" width="24" height="13" rx="2.5" fill="#294a8b"/>
-  <g fill="none" stroke="#2ec4b6" stroke-width="2" opacity="0.85">
-    <path d="M612,330 a12,12 0 0 1 20,0"/>
-    <path d="M605,322 a20,20 0 0 1 34,0"/>
-    <path d="M856,320 a12,12 0 0 1 20,0"/>
-    <path d="M849,312 a20,20 0 0 1 34,0"/>
-  </g>
-  <g stroke="#2ec4b6" stroke-width="1.7" stroke-dasharray="6 5" opacity="0.8">
-    <line x1="586" y1="428" x2="618" y2="356"/>
-    <line x1="652" y1="356" x2="716" y2="428"/>
-    <line x1="756" y1="428" x2="860" y2="348"/>
+  <g stroke="#9fb4d8" stroke-width="1.2" stroke-dasharray="4 4">
+    <line x1="270" y1="84" x2="270" y2="138"/>
+    <line x1="645" y1="84" x2="645" y2="138"/>
+    <line x1="990" y1="84" x2="990" y2="138"/>
+    <line x1="1290" y1="84" x2="1290" y2="138"/>
   </g>
 
   <g>
+    <rect x="60" y="140" width="420" height="240" rx="14" fill="#ffffff" opacity="0.94" stroke="#c2d2e8" stroke-width="1.5"/>
+    <text x="270" y="172" text-anchor="middle" font-size="20" font-weight="bold" letter-spacing="1.5" fill="#294a8b">COOPERATIVE PERCEPTION</text>
+    <rect x="210" y="181" width="120" height="3" rx="1.5" fill="#2ec4b6"/>
+
+    <path d="M148,330 L232,276 L232,344 Z" fill="#2ec4b6" opacity="0.16"/>
+    <path d="M252,246 L180,330 L262,336 Z" fill="#f2b35c" opacity="0.2"/>
+    <line x1="92" y1="332" x2="268" y2="332" stroke="#8ba0c4" stroke-width="2"/>
     <g>
-      <rect x="92" y="424" width="62" height="17" rx="7" fill="#5e718f"/>
-      <path d="M104,426 q6,-11 22,-11 q16,0 20,11 Z" fill="#7b8dab"/>
-      <circle cx="108" cy="444" r="6" fill="#1f2740"/><circle cx="140" cy="444" r="6" fill="#1f2740"/>
+      <rect x="104" y="312" width="42" height="13" rx="5" fill="#2f4f8f"/>
+      <path d="M112,314 q4,-8 15,-8 q11,0 14,8 Z" fill="#4568a8"/>
+      <circle cx="114" cy="327" r="4.5" fill="#16203c"/><circle cx="136" cy="327" r="4.5" fill="#16203c"/>
+      <circle cx="125" cy="302" r="3" fill="#2ec4b6"/>
     </g>
     <g>
-      <rect x="236" y="424" width="62" height="17" rx="7" fill="#7d8fae"/>
-      <path d="M248,426 q6,-11 22,-11 q16,0 20,11 Z" fill="#97a7c2"/>
-      <circle cx="252" cy="444" r="6" fill="#1f2740"/><circle cx="284" cy="444" r="6" fill="#1f2740"/>
+      <rect x="168" y="312" width="42" height="13" rx="5" fill="#5e718f"/>
+      <path d="M176,314 q4,-8 15,-8 q11,0 14,8 Z" fill="#7b8dab"/>
+      <circle cx="178" cy="327" r="4.5" fill="#16203c"/><circle cx="200" cy="327" r="4.5" fill="#16203c"/>
     </g>
+    <line x1="252" y1="252" x2="252" y2="332" stroke="#44557e" stroke-width="3"/>
+    <rect x="243" y="242" width="18" height="11" rx="2" fill="#294a8b"/>
+    <path d="M244,236 a9,9 0 0 1 16,0" fill="none" stroke="#2ec4b6" stroke-width="1.8"/>
+    <circle cx="226" cy="300" r="4.5" fill="#44557e"/>
+    <line x1="226" y1="304" x2="226" y2="318" stroke="#44557e" stroke-width="2.4"/>
+    <line x1="221" y1="326" x2="226" y2="318" stroke="#44557e" stroke-width="2.4"/>
+    <line x1="231" y1="326" x2="226" y2="318" stroke="#44557e" stroke-width="2.4"/>
+    <rect x="214" y="292" width="25" height="38" fill="none" stroke="#f2b35c" stroke-width="1.6" stroke-dasharray="4 3"/>
+    <text x="226" y="286" text-anchor="middle" font-size="13" font-weight="bold" fill="#c77f1f">ped 0.95</text>
+    <path d="M128,300 Q146,284 166,300" fill="none" stroke="#2ec4b6" stroke-width="1.4" stroke-dasharray="4 3"/>
+    <text x="147" y="282" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#1e8d82">PC5</text>
+    <text x="110" y="352" font-size="12.5" fill="#44557e">LiDAR / camera FoV</text>
+
+    <circle cx="293" cy="268" r="13" fill="#ffffff" stroke="#294a8b" stroke-width="2"/>
+    <line x1="286" y1="268" x2="300" y2="268" stroke="#294a8b" stroke-width="2"/>
+    <line x1="293" y1="261" x2="293" y2="275" stroke="#294a8b" stroke-width="2"/>
+    <path d="M268,290 L282,276" stroke="#294a8b" stroke-width="1.6" marker-end="url(#ar)" fill="none"/>
+    <path d="M306,268 L322,268" stroke="#294a8b" stroke-width="1.6" marker-end="url(#ar)" fill="none"/>
+    <text x="293" y="246" text-anchor="middle" font-size="12.5" fill="#44557e">fusion</text>
+
     <g>
-      <rect x="548" y="424" width="64" height="17" rx="7" fill="#2f4f8f"/>
-      <path d="M560,426 q6,-11 23,-11 q16,0 20,11 Z" fill="#4568a8"/>
-      <circle cx="564" cy="444" r="6" fill="#16203c"/><circle cx="596" cy="444" r="6" fill="#16203c"/>
-      <circle cx="580" cy="411" r="4" fill="#2ec4b6"/>
-    </g>
-    <g>
-      <rect x="690" y="424" width="64" height="17" rx="7" fill="#2f4f8f"/>
-      <path d="M702,426 q6,-11 23,-11 q16,0 20,11 Z" fill="#4568a8"/>
-      <circle cx="706" cy="444" r="6" fill="#16203c"/><circle cx="738" cy="444" r="6" fill="#16203c"/>
-      <circle cx="722" cy="411" r="4" fill="#2ec4b6"/>
-    </g>
-    <g>
-      <ellipse cx="1074" cy="448" rx="30" ry="6" fill="#2ec4b6" opacity="0.22"/>
-      <rect x="1046" y="416" width="56" height="26" rx="13" fill="#e9eff9" stroke="#2ec4b6" stroke-width="1.6"/>
-      <rect x="1056" y="423" width="36" height="9" rx="4.5" fill="#9fd9d3"/>
-    </g>
-    <g>
-      <ellipse cx="1208" cy="448" rx="30" ry="6" fill="#2ec4b6" opacity="0.22"/>
-      <rect x="1180" y="416" width="56" height="26" rx="13" fill="#e9eff9" stroke="#2ec4b6" stroke-width="1.6"/>
-      <rect x="1190" y="423" width="36" height="9" rx="4.5" fill="#9fd9d3"/>
-    </g>
-    <g>
-      <ellipse cx="1356" cy="448" rx="30" ry="6" fill="#2ec4b6" opacity="0.22"/>
-      <rect x="1328" y="416" width="56" height="26" rx="13" fill="#e9eff9" stroke="#2ec4b6" stroke-width="1.6"/>
-      <rect x="1338" y="423" width="36" height="9" rx="4.5" fill="#9fd9d3"/>
+      <rect x="326" y="208" width="120" height="120" fill="#f4f8fd" stroke="#294a8b" stroke-width="1.6"/>
+      <g stroke="#c2d2e8" stroke-width="1">
+        <line x1="346" y1="208" x2="346" y2="328"/><line x1="366" y1="208" x2="366" y2="328"/>
+        <line x1="386" y1="208" x2="386" y2="328"/><line x1="406" y1="208" x2="406" y2="328"/>
+        <line x1="426" y1="208" x2="426" y2="328"/>
+        <line x1="326" y1="228" x2="446" y2="228"/><line x1="326" y1="248" x2="446" y2="248"/>
+        <line x1="326" y1="268" x2="446" y2="268"/><line x1="326" y1="288" x2="446" y2="288"/>
+        <line x1="326" y1="308" x2="446" y2="308"/>
+      </g>
+      <rect x="366" y="248" width="20" height="20" fill="#2ec4b6" opacity="0.85"/>
+      <rect x="386" y="248" width="20" height="20" fill="#2ec4b6" opacity="0.5"/>
+      <rect x="406" y="228" width="20" height="20" fill="#294a8b" opacity="0.8"/>
+      <rect x="346" y="288" width="20" height="20" fill="#f2b35c" opacity="0.85"/>
+      <text x="386" y="348" text-anchor="middle" font-size="12.5" fill="#44557e">BEV occupancy grid</text>
     </g>
   </g>
 
-  <path d="M0,246 C140,232 230,216 332,214 C470,212 600,210 748,204 C900,198 1040,188 1168,184 C1300,180 1420,188 1500,194"
-        fill="none" stroke="url(#ribbon)" stroke-width="16" stroke-linecap="round" opacity="0.28"/>
-  <path d="M0,246 C140,232 230,216 332,214 C470,212 600,210 748,204 C900,198 1040,188 1168,184 C1300,180 1420,188 1500,194"
-        fill="none" stroke="url(#ribbon)" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
-
   <g>
-    <circle cx="332" cy="214" r="46" fill="#2ec4b6" opacity="0.14"/>
-    <circle cx="332" cy="214" r="33" fill="#ffffff" opacity="0.96" stroke="#2ec4b6" stroke-width="2"/>
-    <path d="M310,214 Q332,198 354,214 Q332,230 310,214 Z" fill="none" stroke="#294a8b" stroke-width="2.6"/>
-    <circle cx="332" cy="214" r="6.5" fill="#294a8b"/>
-    <circle cx="334.5" cy="211.5" r="1.8" fill="#ffffff"/>
-  </g>
+    <rect x="540" y="140" width="420" height="240" rx="14" fill="#ffffff" opacity="0.94" stroke="#c2d2e8" stroke-width="1.5"/>
+    <text x="750" y="172" text-anchor="middle" font-size="20" font-weight="bold" letter-spacing="1.5" fill="#294a8b">LEARNING &amp; DECISION</text>
+    <rect x="695" y="181" width="110" height="3" rx="1.5" fill="#2ec4b6"/>
 
-  <g>
-    <circle cx="748" cy="204" r="46" fill="#2ec4b6" opacity="0.14"/>
-    <circle cx="748" cy="204" r="33" fill="#ffffff" opacity="0.96" stroke="#2ec4b6" stroke-width="2"/>
-    <g stroke="#294a8b" stroke-width="1.3" opacity="0.9">
-      <line x1="734" y1="192" x2="750" y2="198"/><line x1="734" y1="192" x2="750" y2="211"/>
-      <line x1="734" y1="204" x2="750" y2="198"/><line x1="734" y1="204" x2="750" y2="211"/>
-      <line x1="734" y1="216" x2="750" y2="198"/><line x1="734" y1="216" x2="750" y2="211"/>
-      <line x1="750" y1="198" x2="764" y2="204"/><line x1="750" y1="211" x2="764" y2="204"/>
+    <g stroke="#294a8b" stroke-width="1" opacity="0.45">
+      <line x1="580" y1="238" x2="630" y2="222"/><line x1="580" y1="238" x2="630" y2="262"/><line x1="580" y1="238" x2="630" y2="302"/>
+      <line x1="580" y1="278" x2="630" y2="222"/><line x1="580" y1="278" x2="630" y2="262"/><line x1="580" y1="278" x2="630" y2="302"/>
+      <line x1="580" y1="318" x2="630" y2="222"/><line x1="580" y1="318" x2="630" y2="262"/><line x1="580" y1="318" x2="630" y2="302"/>
+      <line x1="630" y1="222" x2="680" y2="246"/><line x1="630" y1="262" x2="680" y2="246"/><line x1="630" y1="302" x2="680" y2="246"/>
+      <line x1="630" y1="222" x2="680" y2="292"/><line x1="630" y1="262" x2="680" y2="292"/><line x1="630" y1="302" x2="680" y2="292"/>
     </g>
     <g fill="#294a8b">
-      <circle cx="734" cy="192" r="3.4"/><circle cx="734" cy="204" r="3.4"/><circle cx="734" cy="216" r="3.4"/>
-      <circle cx="750" cy="198" r="3.4"/><circle cx="750" cy="211" r="3.4"/>
-      <circle cx="764" cy="204" r="3.8"/>
+      <circle cx="580" cy="238" r="7"/><circle cx="580" cy="278" r="7"/><circle cx="580" cy="318" r="7"/>
+      <circle cx="630" cy="222" r="7"/><circle cx="630" cy="262" r="7"/><circle cx="630" cy="302" r="7"/>
+    </g>
+    <circle cx="680" cy="246" r="8" fill="#2ec4b6"/>
+    <circle cx="680" cy="292" r="8" fill="#2ec4b6"/>
+    <text x="630" y="345" text-anchor="middle" font-size="12.5" fill="#44557e">decision transformer / offline RL</text>
+
+    <text x="748" y="232" font-size="16" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#294a8b">&#960;*(a|s) = argmax<tspan dy="4" font-size="11">a</tspan><tspan dy="-4"> Q(s, a)</tspan></text>
+
+    <text x="762" y="268" font-size="16" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#294a8b">w<tspan dy="4" font-size="11">t+1</tspan><tspan dy="-4"> &#8592; &#931; (n</tspan><tspan dy="4" font-size="11">k</tspan><tspan dy="-4">/n) w</tspan><tspan dy="4" font-size="11">k</tspan></text>
+    <text x="762" y="288" font-size="12.5" fill="#44557e">federated aggregation</text>
+
+    <g>
+      <rect x="820" y="304" width="104" height="52" fill="#f4f8fd" stroke="#294a8b" stroke-width="1.4"/>
+      <g stroke="#c2d2e8" stroke-width="1">
+        <line x1="846" y1="304" x2="846" y2="356"/><line x1="872" y1="304" x2="872" y2="356"/><line x1="898" y1="304" x2="898" y2="356"/>
+        <line x1="820" y1="317" x2="924" y2="317"/><line x1="820" y1="330" x2="924" y2="330"/><line x1="820" y1="343" x2="924" y2="343"/>
+      </g>
+      <rect x="846" y="317" width="26" height="13" fill="#2ec4b6" opacity="0.85"/>
+      <rect x="872" y="330" width="26" height="13" fill="#294a8b" opacity="0.8"/>
+      <rect x="820" y="343" width="26" height="13" fill="#f2b35c" opacity="0.85"/>
+      <text x="872" y="372" text-anchor="middle" font-size="12.5" fill="#44557e">V2X resource blocks</text>
     </g>
   </g>
 
   <g>
-    <circle cx="1168" cy="184" r="46" fill="#2ec4b6" opacity="0.14"/>
-    <circle cx="1168" cy="184" r="33" fill="#ffffff" opacity="0.96" stroke="#2ec4b6" stroke-width="2"/>
-    <path d="M1168,166 L1184,172 V186 Q1184,200 1168,207 Q1152,200 1152,186 V172 Z" fill="none" stroke="#294a8b" stroke-width="2.6"/>
-    <rect x="1162" y="183" width="12" height="9.5" rx="1.6" fill="#294a8b"/>
-    <path d="M1164.8,183 v-3.4 a3.2,3.2 0 0 1 6.4,0 v3.4" fill="none" stroke="#294a8b" stroke-width="2"/>
+    <rect x="1020" y="140" width="420" height="240" rx="14" fill="#ffffff" opacity="0.94" stroke="#c2d2e8" stroke-width="1.5"/>
+    <text x="1230" y="172" text-anchor="middle" font-size="20" font-weight="bold" letter-spacing="1.5" fill="#294a8b">TRUST &amp; PRIVACY</text>
+    <rect x="1180" y="181" width="100" height="3" rx="1.5" fill="#2ec4b6"/>
+
+    <g>
+      <rect x="1048" y="214" width="54" height="40" rx="6" fill="#ffffff" stroke="#294a8b" stroke-width="1.8"/>
+      <rect x="1048" y="214" width="54" height="11" rx="5" fill="#294a8b"/>
+      <rect x="1120" y="214" width="54" height="40" rx="6" fill="#ffffff" stroke="#294a8b" stroke-width="1.8"/>
+      <rect x="1120" y="214" width="54" height="11" rx="5" fill="#294a8b"/>
+      <rect x="1192" y="214" width="54" height="40" rx="6" fill="#ffffff" stroke="#294a8b" stroke-width="1.8"/>
+      <rect x="1192" y="214" width="54" height="11" rx="5" fill="#294a8b"/>
+      <text x="1075" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#294a8b">B&#8321;</text>
+      <text x="1147" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#294a8b">B&#8322;</text>
+      <text x="1219" y="244" text-anchor="middle" font-size="13" font-weight="bold" fill="#294a8b">B&#8323;</text>
+      <path d="M1102,234 L1118,234" stroke="#294a8b" stroke-width="1.6" marker-end="url(#ar)" fill="none"/>
+      <path d="M1174,234 L1190,234" stroke="#294a8b" stroke-width="1.6" marker-end="url(#ar)" fill="none"/>
+      <text x="1110" y="226" text-anchor="middle" font-size="11.5" fill="#44557e">h(&#183;)</text>
+      <text x="1182" y="226" text-anchor="middle" font-size="11.5" fill="#44557e">h(&#183;)</text>
+      <text x="1147" y="276" text-anchor="middle" font-size="12.5" fill="#44557e">hash-chained ledger</text>
+    </g>
+
+    <g>
+      <path d="M1330,206 L1352,214 V232 Q1352,250 1330,259 Q1308,250 1308,232 V214 Z" fill="none" stroke="#294a8b" stroke-width="2.4"/>
+      <rect x="1322" y="228" width="16" height="12" rx="2" fill="#294a8b"/>
+      <path d="M1325.5,228 v-4.5 a4.5,4.5 0 0 1 9,0 v4.5" fill="none" stroke="#294a8b" stroke-width="2.2"/>
+      <text x="1330" y="280" text-anchor="middle" font-size="15" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#294a8b">zk-SNARK &#960;</text>
+    </g>
+
+    <g>
+      <circle cx="1120" cy="326" r="26" fill="#2ec4b6" opacity="0.28"/>
+      <circle cx="1156" cy="326" r="26" fill="#294a8b" opacity="0.22"/>
+      <path d="M1138,307 a26,26 0 0 0 0,38 a26,26 0 0 0 0,-38 Z" fill="#1e8d82" opacity="0.55"/>
+      <circle cx="1120" cy="326" r="26" fill="none" stroke="#1e8d82" stroke-width="1.6"/>
+      <circle cx="1156" cy="326" r="26" fill="none" stroke="#294a8b" stroke-width="1.6"/>
+      <text x="1138" y="372" text-anchor="middle" font-size="13" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#294a8b">PSI:  A &#8745; B</text>
+    </g>
+    <text x="1330" y="330" text-anchor="middle" font-size="15" font-style="italic" font-family="Georgia, 'Times New Roman', serif" fill="#294a8b">&#963; = Sign<tspan dy="4" font-size="11">sk</tspan><tspan dy="-4">(m)</tspan></text>
+    <text x="1330" y="350" text-anchor="middle" font-size="12.5" fill="#44557e">post-quantum signatures</text>
   </g>
 
-  <g font-size="13" font-weight="bold" letter-spacing="1.6" text-anchor="middle">
-    <rect x="246" y="262" width="172" height="26" rx="13" fill="#ffffff" opacity="0.88"/>
-    <text x="332" y="279.5" fill="#294a8b">SHARED PERCEPTION</text>
-    <rect x="658" y="252" width="180" height="26" rx="13" fill="#ffffff" opacity="0.88"/>
-    <text x="748" y="269.5" fill="#294a8b">LEARNING &amp; DECISION</text>
-    <rect x="1094" y="232" width="148" height="26" rx="13" fill="#ffffff" opacity="0.88"/>
-    <text x="1168" y="249.5" fill="#294a8b">TRUST &amp; PRIVACY</text>
+  <path d="M486,260 L534,260" stroke="#294a8b" stroke-width="2" marker-end="url(#ar)" fill="none"/>
+  <text x="510" y="248" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#44557e">fused</text>
+  <text x="510" y="278" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#44557e">features</text>
+  <path d="M966,260 L1014,260" stroke="#294a8b" stroke-width="2" marker-end="url(#ar)" fill="none"/>
+  <text x="990" y="248" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#44557e">decisions &amp;</text>
+  <text x="990" y="278" text-anchor="middle" font-size="12.5" font-weight="bold" fill="#44557e">updates</text>
+
+  <path d="M240,470 L240,388" stroke="#2ec4b6" stroke-width="2.2" marker-end="url(#art)" fill="none"/>
+  <text x="252" y="428" font-size="13" font-weight="bold" fill="#1e8d82">raw sensing</text>
+  <path d="M1230,388 L1230,462" stroke="#2ec4b6" stroke-width="2.2" marker-end="url(#art)" fill="none"/>
+  <text x="1242" y="428" font-size="13" font-weight="bold" fill="#1e8d82">trusted, safe actions</text>
+
+  <rect y="500" width="1500" height="34" fill="url(#roadg)"/>
+  <line x1="12" y1="517" x2="1488" y2="517" stroke="#f3eedd" stroke-width="2.6" stroke-dasharray="22 18" opacity="0.8"/>
+  <rect y="534" width="1500" height="26" fill="#2b3558"/>
+  <path d="M360,498 L520,430 L560,498 Z" fill="#2ec4b6" opacity="0.14"/>
+  <path d="M1050,436 L920,498 L1060,498 Z" fill="#f2b35c" opacity="0.16"/>
+
+  <g>
+    <rect x="130" y="474" width="62" height="17" rx="7" fill="#5e718f"/>
+    <path d="M142,476 q6,-11 22,-11 q16,0 20,11 Z" fill="#7b8dab"/>
+    <circle cx="146" cy="494" r="6" fill="#1f2740"/><circle cx="178" cy="494" r="6" fill="#1f2740"/>
+  </g>
+  <g>
+    <rect x="330" y="474" width="64" height="17" rx="7" fill="#2f4f8f"/>
+    <path d="M342,476 q6,-11 23,-11 q16,0 20,11 Z" fill="#4568a8"/>
+    <circle cx="346" cy="494" r="6" fill="#16203c"/><circle cx="378" cy="494" r="6" fill="#16203c"/>
+    <circle cx="362" cy="461" r="4" fill="#2ec4b6"/>
+  </g>
+  <g>
+    <rect x="610" y="474" width="64" height="17" rx="7" fill="#2f4f8f"/>
+    <path d="M622,476 q6,-11 23,-11 q16,0 20,11 Z" fill="#4568a8"/>
+    <circle cx="626" cy="494" r="6" fill="#16203c"/><circle cx="658" cy="494" r="6" fill="#16203c"/>
+    <circle cx="642" cy="461" r="4" fill="#2ec4b6"/>
+    <rect x="600" y="452" width="84" height="42" fill="none" stroke="#2ec4b6" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="642" y="446" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e8d82">veh 0.93</text>
+  </g>
+  <g>
+    <circle cx="840" cy="452" r="5.5" fill="#44557e"/>
+    <line x1="840" y1="457" x2="840" y2="476" stroke="#44557e" stroke-width="3"/>
+    <line x1="833" y1="490" x2="840" y2="476" stroke="#44557e" stroke-width="3"/>
+    <line x1="847" y1="490" x2="840" y2="476" stroke="#44557e" stroke-width="3"/>
+    <line x1="832" y1="466" x2="848" y2="462" stroke="#44557e" stroke-width="2.6"/>
+    <rect x="824" y="442" width="33" height="52" fill="none" stroke="#f2b35c" stroke-width="1.8" stroke-dasharray="5 4"/>
+    <text x="840" y="434" text-anchor="middle" font-size="13" font-weight="bold" fill="#c77f1f">ped 0.96</text>
+  </g>
+  <g>
+    <line x1="1050" y1="436" x2="1050" y2="500" stroke="#44557e" stroke-width="3.6"/>
+    <rect x="1039" y="424" width="22" height="13" rx="2.5" fill="#294a8b"/>
+    <path d="M1041,418 a11,11 0 0 1 18,0" fill="none" stroke="#2ec4b6" stroke-width="2"/>
+    <path d="M1035,411 a17,17 0 0 1 30,0" fill="none" stroke="#2ec4b6" stroke-width="2"/>
+    <text x="1072" y="432" font-size="13" font-weight="bold" fill="#44557e">RSU</text>
+  </g>
+  <g>
+    <ellipse cx="1330" cy="498" rx="30" ry="6" fill="#2ec4b6" opacity="0.22"/>
+    <rect x="1302" y="466" width="56" height="26" rx="13" fill="#e9eff9" stroke="#2ec4b6" stroke-width="1.6"/>
+    <rect x="1312" y="473" width="36" height="9" rx="4.5" fill="#9fd9d3"/>
   </g>
 
-  <g font-size="12.5" letter-spacing="1.2" opacity="0.85">
-    <text x="30" y="332" fill="#3d5277">TODAY</text>
-    <text x="1452" y="150" fill="#cfd9f2" text-anchor="end">FULL AUTONOMY</text>
+  <g stroke="#2ec4b6" stroke-width="1.7" stroke-dasharray="6 5" fill="none">
+    <path d="M370,458 Q500,420 630,458"/>
+    <path d="M668,460 Q860,400 1042,436"/>
+    <path d="M1062,440 Q1200,420 1316,462"/>
+  </g>
+  <g font-size="13" font-weight="bold" fill="#1e8d82" text-anchor="middle">
+    <text x="500" y="420">C-V2X PC5</text>
+    <text x="858" y="402">Uu</text>
+    <text x="1196" y="416">PC5</text>
   </g>
   </g>
 </svg>
